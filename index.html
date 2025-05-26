@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="index.js"></script>
+        <link href="index.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <h1>Zach's Calculator</h1>
+
+        <h3 id="result"> 0</h3>
+        <p id="calculation"> </p>
+
+        <button id="test" type="button" onclick= "increment('result')">inc</button>
+        <div id="operators" class="operators">
+            <button id="plus" type="button" onclick= "selectOp('+')">+</button>
+            <button id="minus" type="button" onclick= "selectOp('-')">-</button>
+            <button id="mult" type="button" onclick= "selectOp('*')">*</button>
+            <button id="div" type="button" onclick= "selectOp('/')">/</button>
+            <button id="eq" type="button" onclick= "eval()">=</button>
+        </div>
+        <div id="numbers" class="numbers">
+            <div id="nums1" class="numbers">
+                <button id="1" type="button" onclick="selectNum(1)">1</button>
+                <button id="2" type="button" onclick="selectNum(2)">2</button>
+                <button id="3" type="button" onclick="selectNum(3)">3</button>
+            </div>
+            <div id="nums2" class="numbers">
+                <button id="4" type="button" onclick="selectNum(4)">4</button>
+                <button id="5" type="button" onclick="selectNum(5)">5</button>
+                <button id="6" type="button" onclick="selectNum(6)">6</button>
+            </div>
+            <div id="nums3" class="numbers">
+                <button id="7" type="button" onclick="selectNum(7)">7</button>
+                <button id="8" type="button" onclick="selectNum(8)">8</button>
+                <button id="9" type="button" onclick="selectNum(9)">9</button>
+            </div>
+            <div id="nums4" class="numbers">
+                <button id="0" type="button" onclick="selectNum(0)">0</button>
+                <button id="AC" type="button" onclick="reset()">AC</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
