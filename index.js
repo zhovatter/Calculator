@@ -13,7 +13,7 @@ function reset() {
     num1 = 0;
     num2 = 0;
     currOp = null;
-    calculation.innerHTML = "";
+    calculation.value = "";
     output.innerHTML = 0;
 }
 
@@ -22,19 +22,19 @@ function selectNum(num) {
         if (result !== 0) {
             console.log("attempting erase of calc");
             num1 = 0;
-            calculation.innerHTML = "";
+            calculation.value = "";
         }
         num1 = num1*10 + num //allows multi-digit inputs
     } else {
         num2 = num2*10 + num;
     }
-    calculation.innerHTML += num;
+    calculation.value += num;
 }
 
 function selectOp(operator) {
     num2 = 0; //resetting num2 for new op
     currOp = operator;
-    calculation.innerHTML = num1 + operator;
+    calculation.value = num1 + operator;
 }
 
 function eval() {
@@ -50,7 +50,7 @@ function eval() {
     num1 = result
     //var output = document.getElementById('result');
     output.innerHTML = result;
-    calculation.innerHTML = num1
+    calculation.value = num1
     currOp = null;
 
 }

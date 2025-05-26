@@ -9,11 +9,17 @@
     </head>
     <body>
         <h1>Zach's Calculator</h1>
+        <hr>
 
-        <h3 id="result"> 0</h3>
-        <p id="calculation"> </p>
+        <span>
+             <h3>Result: </h3> 
+             <h3 id="result"> 0</h3>
+        </span>
 
-        <button id="test" type="button" onclick= "increment('result')">inc</button>
+        <div id="calculator">
+        <input id="calculation">
+
+
         <div id="operators" class="operators">
             <button id="plus" type="button" onclick= "selectOp('+')">+</button>
             <button id="minus" type="button" onclick= "selectOp('-')">-</button>
@@ -43,5 +49,6 @@
             </div>
             
         </div>
+    </div>
     </body>
 </html>
